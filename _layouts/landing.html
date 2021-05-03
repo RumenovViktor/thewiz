@@ -7,13 +7,17 @@ layout: landing-default
     <h1 class="page-heading">{{ page.title }}</h1>
   {%- endif -%}
 
-  <div style="background-color: white;display:inline-block; height:28rem; width: 100%;">
+  <div style="background-color: white;display:inline-block; width: 100%; padding-bottom: 5%;">
       <div class="container" style="margin-top: 5%;">
         <div class="row">
-          <div class="col-lg-6">
-            <h2 class="">How to make money online</h2>
-            <h5 class="card-subtitle mb-2 text-muted mt-3">Technical and non technical articles about how to start your online presence</h5>
-            <a href="/blog/" class="btn btn-secondary btn-md active mt-3" role="button" aria-pressed="true">Read more</a>
+          <div class="col-lg-6 col-md-6 p-3">
+            <div class="d-flex justify-content-center">
+              <div>
+                <h2 class="">How to make money online</h2>
+                <h5 class="card-subtitle mb-2 text-muted mt-3">Technical and non technical articles about how to start your online presence</h5>
+                <a href="/blog/" class="btn btn-secondary btn-md active mt-3" role="button" aria-pressed="true">Read more</a>
+              </div>
+            </div>
           </div>
           
           {%- include landing-page-subscribe-email.html -%}
@@ -31,10 +35,10 @@ layout: landing-default
 
 <style>
   .svg-border-rounded{
-    margin-top: -2.5%;
+    margin-top: -1.5%;
   }
   .svg-border-rounded svg{
-    height: 3rem;
+    height: 2.5rem;
     width: 100%;
     color: #f2f6fc;
   }
