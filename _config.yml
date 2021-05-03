@@ -31,6 +31,7 @@ url: "thewiz.github.io" # the base hostname & protocol for your site, e.g. http:
 theme: minima
 plugins:
   - jekyll-feed
+google_analytics: "UA-163309475-2"
 
 # Exclude from processing.
 # The following items will not be processed, by default.
