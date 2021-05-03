@@ -4,5 +4,3 @@
 
 layout: landing
 ---
-
-![My helpful screenshot](/assets/pic.png)

@@ -32,6 +32,8 @@ theme: minima
 plugins:
   - jekyll-feed
 google_analytics: "UA-163309475-2"
+sass:
+  sass_dir: assets/css
 
 # Exclude from processing.
 # The following items will not be processed, by default.

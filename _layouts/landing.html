@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: landing-default
 ---
 
 <div class="home">
@@ -7,33 +7,35 @@ layout: default
     <h1 class="page-heading">{{ page.title }}</h1>
   {%- endif -%}
 
-  <h2 style="margin-left: 35%;margin-top: 5%;">Learn every day!</h2>
-
-  <!-- Begin Mailchimp Signup Form -->
-<link href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css">
-<style type="text/css">
-	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
-	/* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
-	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-</style>
-<div id="mc_embed_signup" style="position: absolute; top: 30%;">
-<form action="https://gmail.us17.list-manage.com/subscribe/post?u=b188f8bb26b1205cd76b9a2f0&amp;id=98c64a84ba" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-  <div id="mc_embed_signup_scroll">
-    <label for="mce-EMAIL">Subscribe to our Newsletter</label>
-    <input type="email" style=" width: 300px;" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
-      <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-      <div style="position: absolute; left: -5000px;" aria-hidden="true">
-        <input type="text" name="b_b188f8bb26b1205cd76b9a2f0_98c64a84ba" tabindex="-1" value="">
-      </div>
-      <div class="clear">
-        <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button" style="background-color: #ffde59">
+  <div style="background-color: white;display:inline-block; height:28rem; width: 100%;">
+      <div class="container" style="margin-top: 5%;">
+        <div class="row">
+          <div class="col-lg-6">
+            <h2 class="">How to make money online</h2>
+            <h5 class="card-subtitle mb-2 text-muted mt-3">Technical and non technical articles about how to start your online presence</h5>
+            <a href="/blog/" class="btn btn-secondary btn-md active mt-3" role="button" aria-pressed="true">Read more</a>
+          </div>
+          
+          {%- include landing-page-subscribe-email.html -%}
+        </div>
       </div>
   </div>
-</form>
+</div>
+<div class="svg-border-rounded">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 144.54 17.34" preserveAspectRatio="none" fill="currentColor">
+    <path d="M144.54,17.34H0V0H144.54ZM0,0S32.36,17.34,72.27,17.34,144.54,0,144.54,0"></path>
+  </svg>
 </div>
 
-<!--End mc_embed_signup-->
-  
   {{ content }}
 
-</div>
+<style>
+  .svg-border-rounded{
+    margin-top: -2.5%;
+  }
+  .svg-border-rounded svg{
+    height: 3rem;
+    width: 100%;
+    color: #f2f6fc;
+  }
+</style>
