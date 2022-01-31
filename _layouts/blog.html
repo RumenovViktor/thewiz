@@ -1,43 +1,26 @@
 ---
-layout: default
+layout: default-nowrapper
 ---
 
-<div class="home">
+<div class="container">
   {{ content }}
 
   {%- if site.posts.size > 0 -%}
-    <ul class="post-list">
+  <div class="row">
       {%- for post in site.posts -%}
-      <li>
         {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-        <div class="footer-col-wrapper">
-            <div class="footer-col footer-col-3">
-                {% assign picPath = site.static_files | where: "name", "howToMakeAWebsite.png" | first %}
-                <img src="{{picPath.path}}" alt="{{picPath.name}}" />
+          <div class="card col-md-3 col-lg-3 ml-5 mt-3">
+            <div class="card-body">
+              <span class="post-meta">{{ post.date | date: date_format }}</span>
+              <h3>
+                  <a class="post-link" href="{{ post.url | relative_url }}">
+                      {{ post.title | escape }}
+                  </a>
+              </h3>
             </div>
-            <div class="footer-col footer-col-3">
-                <span class="post-meta">{{ post.date | date: date_format }}</span>
-                <h3>
-                    <a class="post-link" href="{{ post.url | relative_url }}">
-                        {{ post.title | escape }}
-                    </a>
-                </h3>
-            </div>
-            <!-- {% assign picPath = site.static_files | where: "name", "pic.png" | first %}
-            <img src="{{picPath.path}}" alt="{{picPath.name}}" />
-            <span class="post-meta">{{ post.date | date: date_format }}</span>
-            <h3>
-                <a class="post-link" href="{{ post.url | relative_url }}">
-                    {{ post.title | escape }}
-                </a>
-            </h3> -->
-        </div>
-        <!-- {%- if site.show_excerpts -%}
-          {{ post.excerpt }}
-        {%- endif -%} -->
-      </li>
+          </div>
       {%- endfor -%}
-    </ul>
+    </div>
   {%- endif -%}
 
 </div>
